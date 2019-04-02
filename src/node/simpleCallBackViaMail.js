@@ -3,6 +3,9 @@ var nodemailer = require('nodemailer');
 exports.act = function (req)
 {
 
+  console.log('1' + process.env.SENDGRIDUSER);
+  console.log('2' + process.env.SENDGRIDPASS);
+
   // create reusable transporter object using the default SMTP transport
   let transporter = nodemailer.createTransport({
     host: "smtp.sendgrid.net",
@@ -10,8 +13,8 @@ exports.act = function (req)
     secure: false, // true for 465, false for other ports
     auth:
     {
-      user: 'apikey',
-      pass: 'XXX'
+      user: process.env.SENDGRIDUSER,
+      pass: process.env.SENDGRIDPASS
     }
   });
 
