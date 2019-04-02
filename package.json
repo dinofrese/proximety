@@ -15,8 +15,7 @@
   "bugs": {
     "url": "https://github.com/dinofrese/proximety/issues"
   },
-  "homepage": "https://github.com/dinofrese/proximety#readme"
-
+  "homepage": "https://github.com/dinofrese/proximety#readme",
   "engines": {
     "node": "10.15.3"
   },
