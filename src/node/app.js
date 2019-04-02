@@ -7,15 +7,19 @@ var express = require('express')
 
 // setup the express app
 var app = express();
-app.listen(3000)
+let port = process.env.PORT;
+if (port == null || port == "") {
+  port = 3000;
+}
+app.listen(port);
 
 
 // require all proximety connectors
 var simpleCallBackViaMail = require('./simpleCallBackViaMail');
 
 
-app.use('/assets', express.static('assets'));
-app.use('/public', express.static('public'));
+app.use('/assets', express.static('./src/node/assets'));
+app.use('/public', express.static('./src/node/public'));
 
 app.get('/simpleCallBackViaMail', function(req, res){
   simpleCallBackViaMail.act(req);

@@ -1,0 +1,23 @@
+{
+  "name": "proximety",
+  "version": "1.0.0",
+  "description": "proximety is the platform to connect people in the real world - enabling them to help each other.",
+  "main": "./src/node/app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dinofrese/proximety.git"
+  },
+  "author": "Dino Frese",
+  "license": "SEE LICENSE IN LICENSE",
+  "bugs": {
+    "url": "https://github.com/dinofrese/proximety/issues"
+  },
+  "homepage": "https://github.com/dinofrese/proximety#readme"
+
+  "engines": {
+    "node": "10.15.3"
+  },
+}
