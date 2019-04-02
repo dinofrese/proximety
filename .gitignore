@@ -11,3 +11,9 @@
 .Trashes
 ehthumbs.db
 Thumbs.db
+
+# Ignoring heroku files #
+######################
+/node_modules
+npm-debug.log
+/*.env
